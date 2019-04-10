@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPrimary">#0B7ABF</color>
+    <color name="colorPrimaryDark">#01386E</color>
+    <color name="colorPrimaryLight">#52CFCB</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorControlActivated">#D81B60</color>
+    <color name="darkGray">#a9a9a9</color>
+    <color name="colorSecondary">#cddc39</color>
+    <color name="colorSecondaryDark">#99aa00</color>
+    <color name="colorSecondaryLight">#ffff6e</color>
+    <color name="colorBackground">#e8eaf6</color>
+    <color name="colorBottomNavigation">#0B7ABF</color>
+    <color name="colorTranspatentWhite">#4dffffff</color>
+    <color name="color2">#BEA473</color>
+    <color name="color3">#52CFCB</color>
+    <color name="colorIcon">#91979b</color>
+    <color name="colorSettingsBack">#e1f5fe</color>
+
+
+
+
+    <color name="colorLightGray">#fafafa</color>//
+    <color name="coloriconPink">#ff1744</color>//
+    <color name="coloriconYellow">#ffea00</color>//
+    <color name="coloriconOrange">#ffa500</color>//
+    <color name="coloriconGreen">#7FFF00</color>//
+    <color name="coloriconMaroon">#d50000</color>//
+    <color name="coloriconViolet">#673ab7</color>
+    <color name="coloriconBlue">#0152a1</color>//
+    <color name="coloriconDarkBlue">#01386E</color>//
+    <color name="coloriconLightGreen">#9ccc65</color>//
+    <color name="coloriconCoral">#FF4040</color>//
+
+
+
+</resources>
