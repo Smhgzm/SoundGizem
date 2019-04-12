@@ -3,7 +3,7 @@
     <item
         android:id="@+id/navBell"
         android:icon="@drawable/ic_alert"
-        android:title="Ring Ring" />
+        android:title="Acil Arama" />
     <item
         android:id="@+id/navProfil"
         android:icon="@drawable/ic_user_yeni"
@@ -11,6 +11,6 @@
     <item
         android:id="@+id/navDrawer"
         android:icon="@drawable/ic_menu_drawer"
-        android:title="Drawer" />
+        android:title="Menu" />
 
 </menu>
