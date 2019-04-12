@@ -1,44 +1,62 @@
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/layout"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorLightGray"
-    >
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:layout_marginBottom="40dp">
 
     <RelativeLayout
         android:id="@+id/profile_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="4dp"
-        android:paddingBottom="24dp">
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorLightGray"
+        android:elevation="4dp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:src="@drawable/ic_settings_profile" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/profile"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_centerHorizontal="true"
             android:clickable="true"
-            android:elevation="5dp"
-            android:padding="25dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_user_profile"
-            app:civ_border_color="#ffffff"
-            app:civ_border_width="3dp" />
+            android:src="@drawable/ic_userfull"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="1dp"
+            android:paddingTop="15dp"
+            android:layout_margin="15dp"/>
+
+        <!--android:elevation="10dp"-->
 
         <TextView
+
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/profile"
             android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
             android:text="Gizem Koçak"
-            android:textColor="#2b2b2b"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_below="@id/profile"/>
+            android:textColor="@color/colorIndigo"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+
     </RelativeLayout>
 
 
@@ -46,135 +64,157 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/profile_layout"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="40dp"
         android:orientation="vertical"
-        android:paddingTop="15dp"
-        android:paddingBottom="3dp"
-        android:paddingRight="3dp"
-        android:paddingLeft="15dp"
-        android:gravity="center"
+        android:background="@color/colorLightGray"
+        android:paddingTop="15dp">
 
-        android:background="@drawable/shape_backdrop">
 
-        <RelativeLayout
+        <!--Eğitim Durumu-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:gravity="center_horizontal">
+            android:layout_margin="2dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
 
             <TextView
                 android:id="@+id/txtEducationStatus"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/EducationStatus"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
 
             <TextView
                 android:id="@+id/txtEducationStatusis"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/txtEducationStatus"
-                android:clickable="true"
-                android:hint="Lisans"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp"
-                android:textSize="15dp"/>
+                android:hint="Lisans Mezunu"
+                android:textSize="15sp"
+                android:textStyle="normal" />
 
-        </RelativeLayout>
 
-        <RelativeLayout
+        </LinearLayout>
+
+
+
+
+        <!--Meslek-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:gravity="center_horizontal">
+            android:orientation="vertical"
+            android:background="@color/colorAccent"
+            android:layout_margin="2dp"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/txtJob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Job"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
 
             <TextView
                 android:id="@+id/txtJobis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/txtJob"
-                android:clickable="true"
-                android:hint="Job"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp"
-                android:textSize="15dp"/>
+                android:hint="Bilgisayar Mühendisi"
+                android:textSize="15sp"
+                android:textStyle="normal" />
 
-        </RelativeLayout>
 
-        <RelativeLayout
+        </LinearLayout>
+
+
+
+        <!--Doğum Tarihi-->
+        <!--<RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:gravity="center_horizontal">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/txtDateofBirth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/DateofBirth"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/txtDateofBirthis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/txtDateofBirth"
-                android:clickable="true"
-                android:hint="Birthday"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp"
-                android:textSize="15dp"/>
+                android:hint="12.09.1994"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 
-        <RelativeLayout
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="2dp" />-->
+
+
+        <!--Medeni Hali-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:gravity="center_horizontal">
+            android:orientation="vertical"
+            android:background="@color/colorAccent"
+            android:layout_margin="2dp"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/txtMarriage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Marriage"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
 
             <TextView
                 android:id="@+id/txtMarriageis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/txtMarriage"
-                android:clickable="true"
-                android:hint="Marriage"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp"
-                android:textSize="15dp"/>
+                android:hint="Bekar"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </LinearLayout>
 
-        </RelativeLayout>
 
-        <RelativeLayout
+
+
+
+
+        <!--Cinsiyet-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:gravity="center_horizontal">
+            android:orientation="vertical"
+            android:layout_margin="2dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/txtGender"
@@ -182,29 +222,31 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:text="@string/Gender"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="normal" />
 
             <TextView
                 android:id="@+id/txtGenderis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/txtGender"
-                android:clickable="true"
-                android:hint="Gender"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp"
-                android:textSize="15dp"/>
+                android:hint="Kadın"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </LinearLayout>
 
 
-        </RelativeLayout>
 
-        <RelativeLayout
+
+        <!--Kan Grubu-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:gravity="center_horizontal">
+            android:orientation="vertical"
+            android:layout_margin="2dp"
+            android:padding="5dp"
+            android:background="@color/colorAccent">
 
             <TextView
                 android:id="@+id/txtBloodGroup"
@@ -212,22 +254,20 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:text="@string/BloodGroup"
-                android:textStyle="bold"
-                android:textSize="15dp"/>
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="normal" />
 
             <TextView
                 android:id="@+id/txtBloodGroupis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_toRightOf="@+id/txtBloodGroup"
-                android:clickable="true"
-                android:hint="0+"
-                android:textStyle="bold"
-                android:layout_marginLeft="5dp"
-                android:textSize="15dp"/>
+                android:hint="0 Rh +"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </LinearLayout>
 
-        </RelativeLayout>
 
     </LinearLayout>
 

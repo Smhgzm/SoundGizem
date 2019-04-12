@@ -22,13 +22,13 @@
         completions."
     </string>
     <string name="guide">Lütfen verilen alanları size en yakın kişi bilgileriyle doldurunuz.</string>
-    <string name="EducationStatus">Eğitim Durumu: </string>
-    <string name="Job">Meslek: </string>
-    <string name="DateofBirth">Doğum Tarihi: </string>
-    <string name="Marriage">Medeni Hali: </string>
-    <string name="Gender">Cinsiyet: </string>
-    <string name="Age">Yaş: </string>
-    <string name="BloodGroup">Kan Grubu: </string>
+    <string name="EducationStatus">Eğitim Durumu </string>
+    <string name="Job">Meslek </string>
+    <string name="DateofBirth">Doğum Tarihi </string>
+    <string name="Marriage">Medeni Hali </string>
+    <string name="Gender">Cinsiyet </string>
+    <string name="Age">Yaş </string>
+    <string name="BloodGroup">Kan Grubu </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="menu_message">Mesaj</string>

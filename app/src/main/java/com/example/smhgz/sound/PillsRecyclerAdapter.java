@@ -1,12 +1,12 @@
 package com.example.smhgz.sound;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
 
@@ -15,9 +15,9 @@ public class PillsRecyclerAdapter extends RecyclerView.Adapter<PillsRecyclerAdap
     ArrayList<Pill> mPillList;
     LayoutInflater inflater;
 
-    public PillsRecyclerAdapter(ReminderFragment context, ArrayList<Pill> products) {
-        inflater = LayoutInflater.from(context);
-        this.mPillList = products;
+    public PillsRecyclerAdapter(ReminderFragment context, ArrayList<Pill> pills) {
+        inflater = LayoutInflater.from(context.getContext());
+        this.mPillList = pills;
     }
 
 
@@ -30,8 +30,8 @@ public class PillsRecyclerAdapter extends RecyclerView.Adapter<PillsRecyclerAdap
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Pill selectedProduct = mPillList.get(position);
-        holder.setData(selectedProduct, position);
+        Pill selectedPill = mPillList.get(position);
+        holder.setData(selectedPill, position);
 
     }
 
@@ -43,24 +43,22 @@ public class PillsRecyclerAdapter extends RecyclerView.Adapter<PillsRecyclerAdap
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView productName, productDescription;
-        ImageView productImage, deleteproduct;
+        TextView pillName;
+        ImageView pillImage, deletepill;
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            productName = (TextView) itemView.findViewById(R.id.productName);
-            productDescription = (TextView) itemView.findViewById(R.id.productDescription);
-            productImage = (ImageView) itemView.findViewById(R.id.productImage);
-            deleteproduct = (ImageView) itemView.findViewById(R.id.deleteproduct);
-            deleteproduct.setOnClickListener(this);
+            pillImage = (ImageView) itemView.findViewById(R.id.img_reminder);
+            pillName = (TextView) itemView.findViewById(R.id.txtPills);
+            deletepill = (ImageView) itemView.findViewById(R.id.imgRecycleBin);
+            deletepill.setOnClickListener(this);
 
         }
 
-        public void setData(Pill selectedProduct, int position) {
+        public void setData(Pill selectedPill, int position) {
 
-            this.productName.setText(selectedProduct.getProductName());
-            this.productDescription.setText(selectedProduct.getProductDescription());
-            this.productImage.setImageResource(selectedProduct.getImageID());
+            this.pillName.setText(selectedPill.getPillName());
+            this.pillImage.setImageResource(selectedPill.getImageID());
 
 
         }
