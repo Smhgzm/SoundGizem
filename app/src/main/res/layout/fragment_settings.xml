@@ -39,7 +39,8 @@
                 android:id="@+id/lyUser"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp">
+                android:paddingLeft="5dp"
+                android:clickable="true">
 
 
                 <ImageView
@@ -101,7 +102,8 @@
                 android:id="@+id/lyPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="5dp">
+                android:paddingLeft="5dp"
+                android:clickable="true">
 
 
                 <ImageView
@@ -118,6 +120,34 @@
                     android:layout_toRightOf="@+id/img_pass"
                     android:gravity="center_vertical"
                     android:hint="Yeni şifre"
+                    android:paddingLeft="5dp"
+                    android:textSize="15sp" />
+
+                <!--tıklayınca fragment açılacak-->
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/lyGuideBook"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp">
+
+
+                <ImageView
+                    android:id="@+id/img_guide_book"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_guide_book" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+
+                    android:layout_toRightOf="@+id/img_guide_book"
+                    android:gravity="center_vertical"
+                    android:hint="Rehberi Düzenle"
                     android:paddingLeft="5dp"
                     android:textSize="15sp" />
 
@@ -148,7 +178,8 @@
                 android:id="@+id/lyDob"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp">
+                android:paddingLeft="5dp"
+                android:clickable="true">
 
 
                 <ImageView
@@ -177,7 +208,8 @@
                 android:id="@+id/lyKronic"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp">
+                android:paddingLeft="5dp"
+                android:clickable="true">
 
 
                 <ImageView
@@ -205,7 +237,8 @@
                 android:id="@+id/lyBloodGroup"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp">
+                android:paddingLeft="5dp"
+                android:clickable="true">
 
 
                 <ImageView
@@ -281,10 +314,10 @@
                     android:layout_height="30dp"
                     android:layout_centerInParent="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="40dp"
                     android:layout_toRightOf="@id/txt_notify"
                     android:backgroundTint="@color/colorPrimary"
-                    android:checked="true" />
+                    android:hint=""/>
 
             </RelativeLayout>
 
@@ -343,7 +376,8 @@
                 android:id="@+id/lyDeleteAll"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp">
+                android:paddingLeft="5dp"
+                android:clickable="true">
 
 
                 <ImageView
@@ -373,7 +407,8 @@
                 android:id="@+id/lyExit"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp">
+                android:paddingLeft="5dp"
+                android:clickable="true">
 
 
                 <ImageView

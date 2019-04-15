@@ -16,7 +16,7 @@ public class SplashActivity extends Activity {
 /*    Typeface tf1;
     TextView splashVox = (TextView)findViewById(R.id.splashVox);*/
 
-    private static int display_time=4000;
+    private static int display_time=2000;
 
     @Override
     protected void attachBaseContext(Context newBase) {
