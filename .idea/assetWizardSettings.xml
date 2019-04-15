@@ -14,11 +14,11 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="height" value="175" />
-                            <entry key="outputName" value="ic_userfull" />
+                            <entry key="height" value="373" />
+                            <entry key="outputName" value="ic_gender" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\smhgz\userfull.svg" />
-                            <entry key="width" value="175" />
+                            <entry key="sourceFile" value="C:\Users\smhgz\gender.svg" />
+                            <entry key="width" value="373" />
                           </map>
                         </option>
                       </PersistentState>

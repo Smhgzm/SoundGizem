@@ -21,8 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="5dp"
             android:background="@color/colorAccent"
             android:orientation="vertical">
@@ -39,8 +39,8 @@
                 android:id="@+id/lyUser"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:paddingLeft="5dp">
 
 
                 <ImageView
@@ -102,8 +102,8 @@
                 android:id="@+id/lyPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="5dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:paddingLeft="5dp">
 
 
                 <ImageView
@@ -126,6 +126,176 @@
                 <!--tıklayınca fragment açılacak-->
 
             </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:text="Kişisel Ayarlar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/lyEducation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp">
+
+
+                <ImageView
+                    android:id="@+id/img_education"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_graduation" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+                    android:layout_toRightOf="@+id/img_education"
+                    android:gravity="center_vertical"
+                    android:hint="Eğitim Durumu"
+                    android:paddingLeft="5dp"
+                    android:textSize="15sp" />
+
+                <!--tıklayınca fragment açılacak-->
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lyJob"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp">
+
+
+                <ImageView
+                    android:id="@+id/img_job"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_job" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+                    android:layout_toRightOf="@+id/img_job"
+                    android:gravity="center_vertical"
+                    android:hint="Meslek"
+                    android:paddingLeft="5dp"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lyGender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp">
+
+
+                <ImageView
+                    android:id="@+id/img_gender"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_gender" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+                    android:layout_toRightOf="@+id/img_gender"
+                    android:gravity="center_vertical"
+                    android:hint="Cinsiyet"
+                    android:paddingLeft="5dp"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lyMaritalStatus"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="5dp">
+
+
+                <ImageView
+                    android:id="@+id/img_maritalstatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_marital_status" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+                    android:layout_toRightOf="@+id/img_maritalstatus"
+                    android:gravity="center_vertical"
+                    android:hint="Medeni Hali"
+                    android:paddingLeft="5dp"
+                    android:textSize="15sp" />
+
+                <!--tıklayınca fragment açılacak-->
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/lyDob"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:paddingLeft="5dp">
+
+
+                <ImageView
+                    android:id="@+id/img_dob"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_balloons" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+                    android:layout_toRightOf="@+id/img_dob"
+                    android:gravity="center_vertical"
+                    android:hint="eski doğum tarihi görünecek"
+                    android:paddingLeft="5dp"
+                    android:textSize="15sp" />
+
+                <!--tıklayınca fragment açılacak-->
+
+            </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/lyGuideBook"
                 android:layout_width="match_parent"
@@ -154,62 +324,13 @@
                 <!--tıklayınca fragment açılacak-->
 
             </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@color/colorAccent"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30sp"
-                android:text="Kişisel Ayarlar"
-                android:textColor="@color/colorPrimary"
-                android:textSize="15sp" />
-
-
-            <RelativeLayout
-                android:id="@+id/lyDob"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:paddingLeft="5dp"
-                android:clickable="true">
-
-
-                <ImageView
-                    android:id="@+id/img_dob"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_centerVertical="true"
-                    android:padding="2dp"
-                    android:src="@drawable/ic_balloons" />
-
-                <TextView
-                    android:layout_width="200dp"
-                    android:layout_height="40sp"
-
-                    android:layout_toRightOf="@+id/img_dob"
-                    android:gravity="center_vertical"
-                    android:hint="eski doğum tarihi görünecek"
-                    android:paddingLeft="5dp"
-                    android:textSize="15sp" />
-
-                <!--tıklayınca fragment açılacak-->
-
-            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/lyKronic"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:paddingLeft="5dp">
 
 
                 <ImageView
@@ -237,8 +358,8 @@
                 android:id="@+id/lyBloodGroup"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:paddingLeft="5dp">
 
 
                 <ImageView
@@ -269,8 +390,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="5dp"
             android:background="@color/colorAccent"
             android:orientation="vertical">
@@ -317,7 +438,7 @@
                     android:layout_marginLeft="40dp"
                     android:layout_toRightOf="@id/txt_notify"
                     android:backgroundTint="@color/colorPrimary"
-                    android:hint=""/>
+                    android:hint="" />
 
             </RelativeLayout>
 
@@ -326,8 +447,8 @@
                 android:id="@+id/lyReminder"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:paddingLeft="5dp">
 
 
                 <ImageView
@@ -336,10 +457,9 @@
                     android:layout_height="30dp"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:paddingRight="8dp"
-                    android:src="@drawable/ic_clock_rmdr"
                     android:clickable="true"
-                    />
+                    android:paddingRight="8dp"
+                    android:src="@drawable/ic_clock_rmdr" />
 
                 <TextView
                     android:layout_width="200dp"
@@ -359,8 +479,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="5dp"
             android:background="@color/colorAccent"
             android:orientation="vertical">
@@ -376,8 +496,8 @@
                 android:id="@+id/lyDeleteAll"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:paddingLeft="5dp">
 
 
                 <ImageView
@@ -407,8 +527,8 @@
                 android:id="@+id/lyExit"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:paddingLeft="5dp"
-                android:clickable="true">
+                android:clickable="true"
+                android:paddingLeft="5dp">
 
 
                 <ImageView

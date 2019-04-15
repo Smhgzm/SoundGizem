@@ -72,6 +72,14 @@ public class MenuListAdapter extends BaseAdapter {
                         Log.d("menu_log", "location fragment");
                         break;
                     }
+
+
+                    case "gallery" : {
+                        fragment = new GalleryFragment();
+                        Log.d("menu_log", "gallery fragment");
+                        break;
+                    }
+
                     case "settings" : {
                         fragment = new SettingsFragment();
                         Log.d("menu_log", "settings fragment");
@@ -80,6 +88,7 @@ public class MenuListAdapter extends BaseAdapter {
                     }
                 }
                 loadFragment(fragment);
+
             }
         });
 
