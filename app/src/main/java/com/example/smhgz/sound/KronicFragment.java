@@ -42,8 +42,10 @@ public class KronicFragment extends Fragment {
     public List<MenuItem> menuItems() {
         List<MenuItem> items = new ArrayList<>();
 
-        items.add(new MenuItem(R.string.kronic_astim, "astım"));
+
+
         items.add(new MenuItem(R.string.kronic_addison, "addison"));
+        items.add(new MenuItem(R.string.kronic_astim, "astım"));
         items.add(new MenuItem(R.string.kronic_alzheimer, "alzheimer"));
         items.add(new MenuItem(R.string.kronic_behcet, "behcet"));
         items.add(new MenuItem(R.string.kronic_bobrek, "bobrek"));
@@ -85,11 +87,21 @@ public class KronicFragment extends Fragment {
 
         int title;
         String tag;
+        boolean isSelected;
+
 
         MenuItem(int title, String tag) {
-
             this.title = title;
             this.tag = tag;
+            this.isSelected = false;
+        }
+
+        public boolean isSelected() {
+            return isSelected;
+        }
+
+        public void setSelected(boolean selected) {
+            isSelected = selected;
         }
 
         public String getTag() {

@@ -19,10 +19,14 @@ public class SettingsFragment extends Fragment {
     FragmentManager fragmentManager;
     RelativeLayout lyUser;
     RelativeLayout lyPass;
-    RelativeLayout lyBlood;
-    RelativeLayout lyGuideBook;
+    RelativeLayout lyEducation;
+    RelativeLayout lyJob;
+    RelativeLayout lyGender;
+    RelativeLayout lyMaritalStatus;
     RelativeLayout lyDob;
+    RelativeLayout lyGuideBook;
     RelativeLayout lyKronic;
+    RelativeLayout lyBlood;
     RelativeLayout lyNotify;
     RelativeLayout lyReminder;
     RelativeLayout lyDeleteAll;
@@ -51,8 +55,6 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-
-
         //Password Layout onClickmetod
         lyPass =v.findViewById(R.id.lyPass);
         lyPass.setOnClickListener(new View.OnClickListener() {
@@ -63,8 +65,46 @@ public class SettingsFragment extends Fragment {
             }
         });
 
+        //Education Layout onClickmetod
+        lyEducation =v.findViewById(R.id.lyEducation);
+        lyEducation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UpdateEducationDialogFragment newFragment =new UpdateEducationDialogFragment();
+                newFragment.show(getFragmentManager(),"education");
+            }
+        });
+
+        //Job Layout onClickmetod
+        lyJob =v.findViewById(R.id.lyJob);
+        lyJob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UpdateJobDialogFragment newFragment =new UpdateJobDialogFragment();
+                newFragment.show(getFragmentManager(),"job");
+            }
+        });
+
+        //Gender Layout onClickmetod
+        lyGender=v.findViewById(R.id.lyGender);
+        lyGender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UpdateGenderDialogFragment newFragment =new UpdateGenderDialogFragment();
+                newFragment.show(getFragmentManager(),"gender");
+            }
+        });
 
 
+        //MaritalStatus Layout onClickmetod
+        lyMaritalStatus =v.findViewById(R.id.lyMaritalStatus);
+        lyMaritalStatus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UpdateMaritalStatusDialogFragment newFragment =new UpdateMaritalStatusDialogFragment();
+                newFragment.show(getFragmentManager(),"marital_status");
+            }
+        });
 
         //Bloodgroup Layout onClickmetod
         lyBlood = v.findViewById(R.id.lyBloodGroup);
@@ -77,25 +117,6 @@ public class SettingsFragment extends Fragment {
         });
 
 
-/*        lyKronic =v.findViewById(R.id.lyKronic);
-        lyKronic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                KronicFragment new Fragment() =new KronicFragment();
-                newFragment.show(getFragmentManager(), "bloodgroup");
-            }
-        });*/
-
-        lyReminder = v.findViewById(R.id.lyReminder);
-        lyReminder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                UpdateUserNameDialogFragment newFragment = new UpdateUserNameDialogFragment();
-                newFragment.show(getFragmentManager(), "reminder");
-            }
-        });
-
-/*
         //fragment AddToGuideBook
         lyGuideBook=v.findViewById(R.id.lyGuideBook);
         lyGuideBook.setOnClickListener(new View.OnClickListener() {
@@ -105,7 +126,16 @@ public class SettingsFragment extends Fragment {
                 loadFragment(fragment);
             }
         });
-*/
+
+
+        lyKronic =v.findViewById(R.id.lyKronic);
+        lyKronic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment =new KronicFragment();
+                loadFragment(fragment);
+            }
+        });
 
         return v;
 
@@ -114,7 +144,7 @@ public class SettingsFragment extends Fragment {
 
     private boolean loadFragment(Fragment fragment) {
         if (fragment != null) {
-            fragmentManager
+            this.context.getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.fragment_container,fragment)
                     .commit();
