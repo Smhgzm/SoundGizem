@@ -68,11 +68,25 @@ public class MenuListAdapter extends BaseAdapter {
                         Log.d("menu_log", "message fragment");
                         break;
                     }
+
                     case "location" : {
+                        fragment = new ProfileFragment();
                         Log.d("menu_log", "location fragment");
                         break;
                     }
 
+                    case "call" : {
+                        fragment = new ProfileFragment();
+                        Log.d("menu_log", "call fragment");
+                        break;
+                    }
+
+                    case "blog" : {
+                        fragment = new BlogFragment();
+                        Log.d("menu_log", "blog fragment");
+                        break;
+
+                    }
 
                     case "gallery" : {
                         fragment = new GalleryFragment();
@@ -86,6 +100,8 @@ public class MenuListAdapter extends BaseAdapter {
                         break;
 
                     }
+
+
                 }
                 loadFragment(fragment);
 

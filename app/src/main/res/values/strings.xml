@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Alz</string>
-    <string name="title_activity_menu">Alz</string>
+    <string name="app_name">VOX</string>
+    <string name="title_activity_menu">VOX</string>
     <string name="navigation_drawer_open">Menüyü Aç</string>
     <string name="navigation_drawer_close">Menüyü Kapat</string>
     <string name="nav_header_title">HOŞ GELDİNİZ</string>
-    <string name="nav_header_subtitle">Aslı Nazlı Şire</string><!--loginden alınacak-->
+    <string name="nav_header_subtitle">Gizem KOCAK</string><!--loginden alınacak-->
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Ayarlar</string>
     <string name="title_activity_login">Giriş yap</string>

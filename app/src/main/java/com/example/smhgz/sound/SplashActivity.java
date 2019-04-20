@@ -36,13 +36,7 @@ public class SplashActivity extends Activity {
             }
         },display_time);
 
-/*        Typeface tf1 = Typeface.createFromAsset(getAssets(),"fonts/CormoMedium.ttf");
-        TextView Vox = (TextView) findViewById(R.id.splashVox);
 
-        Vox.setTypeface(tf1);*/
-
-
-        // myTextView.setTypeface(tf1);
 
     }
 }
