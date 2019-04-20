@@ -18,14 +18,7 @@ public class ReminderFragment extends Fragment {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.fragment_reminder);
 
-            recyclerView = (RecyclerView) recyclerView.findViewById(R.id.recylerview);
 
-            PillsRecyclerAdapter productAdapter = new PillsRecyclerAdapter(this,Pill.getData());
-            recyclerView.setAdapter(productAdapter);
-
-            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this.getActivity());
-            linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-            recyclerView.setLayoutManager(linearLayoutManager);
 
         }
 

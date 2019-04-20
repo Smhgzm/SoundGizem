@@ -94,6 +94,12 @@ public class MenuListAdapter extends BaseAdapter {
                         break;
                     }
 
+                    case "pills" : {
+                        fragment = new PillFragment();
+                        Log.d("menu_log", "pill fragment");
+                        break;
+                    }
+
                     case "settings" : {
                         fragment = new SettingsFragment();
                         Log.d("menu_log", "settings fragment");

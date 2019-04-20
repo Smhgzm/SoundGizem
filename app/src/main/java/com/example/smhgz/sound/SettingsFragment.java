@@ -128,17 +128,6 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-        //Bloodgroup Layout onClickmetod
-        lyBlood = v.findViewById(R.id.lyBloodGroup);
-        lyBlood.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                UpdateBloodDialogFragment newFragment = new UpdateBloodDialogFragment();
-                newFragment.show(getFragmentManager(), "bloodgroup");
-            }
-        });
-
-
         //fragment AddToGuideBook
         lyGuideBook=v.findViewById(R.id.lyGuideBook);
         lyGuideBook.setOnClickListener(new View.OnClickListener() {
@@ -149,12 +138,33 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-
+        //fragment kronic
         lyKronic =v.findViewById(R.id.lyKronic);
         lyKronic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Fragment fragment =new KronicFragment();
+                loadFragment(fragment);
+            }
+        });
+
+
+        //Bloodgroup Layout onClickmetod
+        lyBlood = v.findViewById(R.id.lyBloodGroup);
+        lyBlood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UpdateBloodDialogFragment newFragment = new UpdateBloodDialogFragment();
+                newFragment.show(getFragmentManager(), "bloodgroup");
+            }
+        });
+
+        //fragment reminder
+        lyReminder =v.findViewById(R.id.lyReminder);
+        lyReminder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment =new ReminderFragment();
                 loadFragment(fragment);
             }
         });

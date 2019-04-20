@@ -12,10 +12,10 @@ import java.util.ArrayList;
 
 public class PillsRecyclerAdapter extends RecyclerView.Adapter<PillsRecyclerAdapter.MyViewHolder> {
 
-    ArrayList<Pill> mPillList;
+    ArrayList<PillFragment.Pill> mPillList;
     LayoutInflater inflater;
 
-    public PillsRecyclerAdapter(ReminderFragment context, ArrayList<Pill> pills) {
+    public PillsRecyclerAdapter(PillFragment context, ArrayList<PillFragment.Pill> pills) {
         inflater = LayoutInflater.from(context.getContext());
         this.mPillList = pills;
     }
@@ -23,14 +23,14 @@ public class PillsRecyclerAdapter extends RecyclerView.Adapter<PillsRecyclerAdap
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.fragment_pills, parent, false);
+        View view = inflater.inflate(R.layout.pill_row_layout, parent, false);
         MyViewHolder holder = new MyViewHolder(view);
         return holder;
     }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Pill selectedPill = mPillList.get(position);
+        PillFragment.Pill selectedPill = mPillList.get(position);
         holder.setData(selectedPill, position);
 
     }
@@ -48,28 +48,23 @@ public class PillsRecyclerAdapter extends RecyclerView.Adapter<PillsRecyclerAdap
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            pillImage = (ImageView) itemView.findViewById(R.id.img_reminder);
-            pillName = (TextView) itemView.findViewById(R.id.txtPills);
-            deletepill = (ImageView) itemView.findViewById(R.id.imgRecycleBin);
-            deletepill.setOnClickListener(this);
+            pillImage = (ImageView) itemView.findViewById(R.id.pill_row_img);
+            pillName = (TextView) itemView.findViewById(R.id.pill_row_text);
+         /*   deletepill = (ImageView) itemView.findViewById(R.id.imgRecycleBin);
+            deletepill.setOnClickListener(this);*/
 
         }
 
-        public void setData(Pill selectedPill, int position) {
+        public void setData(PillFragment.Pill selectedPill, int position) {
 
             this.pillName.setText(selectedPill.getPillName());
             this.pillImage.setImageResource(selectedPill.getImageID());
 
-
         }
-
 
         @Override
         public void onClick(View v) {
 
-
         }
-
-
     }
 }

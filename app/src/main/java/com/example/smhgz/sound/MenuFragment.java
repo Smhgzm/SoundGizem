@@ -45,6 +45,7 @@ public class MenuFragment extends Fragment {
         items.add(new MenuItem(R.drawable.ic_quiz, R.string.menu_blog,"blog"));
         items.add(new MenuItem(R.drawable.ic_menu_gallery, R.string.menu_gallery,"gallery"));
         items.add(new MenuItem(R.drawable.ic_menu_manage, R.string.menu_settings,"settings"));
+        items.add(new MenuItem(R.drawable.ic_menu_pill, R.string.menu_pill,"pills"));
         items.add(new MenuItem(R.drawable.ic_menu_share, R.string.menu_share,"share"));
         items.add(new MenuItem(R.drawable.ic_rate_us, R.string.menu_rate_us,"rate_us"));
         items.add(new MenuItem(R.drawable.ic_report_problem, R.string.menu_feedback,"feedback"));

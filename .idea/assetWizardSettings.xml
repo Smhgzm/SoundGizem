@@ -15,9 +15,9 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="height" value="512" />
-                            <entry key="outputName" value="ic_id" />
+                            <entry key="outputName" value="ic_menu_pill" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\smhgz\id.svg" />
+                            <entry key="sourceFile" value="C:\Users\smhgz\pills.svg" />
                             <entry key="width" value="512" />
                           </map>
                         </option>
