@@ -431,13 +431,14 @@
                     android:textSize="15sp" />
 
                 <Switch
+                    android:id="@+id/SwitchNotify"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_centerInParent="true"
                     android:layout_centerHorizontal="true"
                     android:layout_marginLeft="40dp"
                     android:layout_toRightOf="@id/txt_notify"
-                    android:backgroundTint="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimaryDark"
                     android:hint="" />
 
             </RelativeLayout>
@@ -501,7 +502,7 @@
 
 
                 <ImageView
-                    android:id="@+id/img_blood"
+                    android:id="@+id/img_delete_all"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
@@ -513,7 +514,7 @@
                     android:layout_width="200dp"
                     android:layout_height="40dp"
                     android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/img_blood"
+                    android:layout_toRightOf="@+id/img_delete_all"
                     android:gravity="center_vertical"
                     android:hint="Tüm Verileri Sil"
                     android:paddingLeft="5dp"
@@ -532,7 +533,7 @@
 
 
                 <ImageView
-                    android:id="@+id/img_blood"
+                    android:id="@+id/img_exit"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_centerVertical="true"
@@ -543,13 +544,12 @@
                 <TextView
                     android:layout_width="200dp"
                     android:layout_height="40dp"
-                    android:layout_toRightOf="@+id/img_blood"
+                    android:layout_toRightOf="@+id/img_exit"
                     android:gravity="center_vertical"
                     android:hint="Çıkış"
                     android:paddingLeft="5dp"
                     android:textSize="15sp" />
 
-                <!--tıklayınca fragment açılacak-->
 
             </RelativeLayout>
 
