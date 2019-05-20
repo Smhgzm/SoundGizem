@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_weight="9"
         android:layout_height="0dp"
-        android:background="@color/colorAccent">
+        android:background="@color/colorLightGray">
     </android.support.v7.widget.RecyclerView>
 
     <View

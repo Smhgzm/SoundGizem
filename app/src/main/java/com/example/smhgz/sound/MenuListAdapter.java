@@ -63,6 +63,13 @@ public class MenuListAdapter extends BaseAdapter {
             public void onClick(View v) {
                 Fragment fragment = null;
                 switch (v.getTag().toString()) {
+
+                    case "profile" : {
+                        fragment = new ProfileFragment();
+                        Log.d("menu_log", "profile fragment");
+                        break;
+                    }
+
                     case "message" : {
                         fragment = new ProfileFragment();
                         Log.d("menu_log", "message fragment");

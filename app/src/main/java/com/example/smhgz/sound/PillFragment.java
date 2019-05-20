@@ -67,7 +67,7 @@ public class PillFragment extends Fragment {
 
         public ArrayList<Pill> getData() {
             ArrayList<Pill> pillList = new ArrayList<Pill>();
-            int pillImages[] = {R.drawable.ic_add};
+            int pillImages[] = {R.drawable.ic_pill};
             String[] pillNames = {"Aspirin", "Majezik"};
 
             for (int i = 0; i < pillImages.length; i++) {

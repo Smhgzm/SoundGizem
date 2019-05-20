@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment = null;
             switch (item.getItemId()) {
-                case R.id.navBell:
-
+                case R.id.navAsistant:
+                    fragment = new VoiceAsistantFragment();
                     break;
-                case R.id.navProfil:
-                    fragment = new ProfileFragment();
+                case R.id.navCall:
+                    fragment = new EmergencyCallFragment();
                     break;
                 case R.id.navDrawer:
                     fragment = new MenuFragment();

@@ -39,6 +39,7 @@ public class MenuFragment extends Fragment {
     public List<MenuItem> menuItems() {
 
         List<MenuItem> items = new ArrayList<>();
+        items.add(new MenuItem(R.drawable.ic_user_avatar, R.string.menu_profile, "profile"));
         items.add(new MenuItem(R.drawable.ic_message, R.string.menu_message, "message"));
         items.add(new MenuItem(R.drawable.ic_location, R.string.menu_location, "location"));
         items.add(new MenuItem(R.drawable.ic_mic, R.string.menu_call,"call"));

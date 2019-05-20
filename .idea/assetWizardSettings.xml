@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -14,11 +19,11 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="height" value="512" />
-                            <entry key="outputName" value="ic_menu_pill" />
+                            <entry key="height" value="50" />
+                            <entry key="outputName" value="ic_user_avatar" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\smhgz\pills.svg" />
-                            <entry key="width" value="512" />
+                            <entry key="sourceFile" value="C:\Users\smhgz\AndroidStudioProjects\ic_user_avatar.svg" />
+                            <entry key="width" value="50" />
                           </map>
                         </option>
                       </PersistentState>

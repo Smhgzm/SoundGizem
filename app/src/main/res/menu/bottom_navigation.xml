@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navBell"
+        android:id="@+id/navAsistant"
+        android:icon="@drawable/ic_voice"
+        android:title="Sesli Asistan" />
+    <item
+        android:id="@+id/navCall"
         android:icon="@drawable/ic_alert"
         android:title="Acil Arama" />
-    <item
-        android:id="@+id/navProfil"
-        android:icon="@drawable/ic_user_yeni"
-        android:title="Profilim" />
     <item
         android:id="@+id/navDrawer"
         android:icon="@drawable/ic_menu_drawer"

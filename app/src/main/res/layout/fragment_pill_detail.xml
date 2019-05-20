@@ -38,7 +38,7 @@
         <Button
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:background="@color/coloriconLavender"
+            android:background="@color/coloriconPill"
             android:text="Hatırlatıcı ekle"
             android:textColor="@color/colorAccent"/>
 
@@ -50,7 +50,7 @@
         <Button
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:background="@color/coloriconLavender"
+            android:background="@color/coloriconPill"
             android:text="ilacı sil"
             android:textColor="@color/colorAccent"/>
 

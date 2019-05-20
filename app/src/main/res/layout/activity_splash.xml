@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorAccent"
     tools:ignore="MissingPrefix">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/vox" />
+        android:src="@drawable/ic_launcher_ribbon"
+        android:padding="70dp"/>
 
 
 </LinearLayout>
